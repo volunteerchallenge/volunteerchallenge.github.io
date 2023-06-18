@@ -9,7 +9,7 @@ document.writeln("		        <span class=\'icon-bar\'></span>");
 document.writeln("		        <span class=\'icon-bar\'></span>");
 document.writeln("		        <span class=\'icon-bar\'></span>");
 document.writeln("		      </button>");
-document.writeln("		      <a class=\'navbar-brand\' href=\'./index.html\'>IEEE MLSP 2023 Data Challenge - Volunteer Retention and Future Collaboration Prediction</a>");
+document.writeln("		      <a class=\'navbar-brand\' href=\'./index.html\' style=\'color:#000000\'>IEEE MLSP 2023 Data Challenge - Volunteer Retention and Future Collaboration Prediction</a>");
 document.writeln("		    </div>");
 document.writeln("");
 document.writeln("		    <!-- Collect the nav links, forms, and other content for toggling -->");
