@@ -1,73 +1,101 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>serverfor社服-首页</title>
+        <title>MLSP - Volunteer Challenge</title>
         <script src="js/setting.js"></script>
     </head>
     <body>
     	<script src="js/navbar.js"></script>
         <!-- 下面是主页body内容 -->
-		<div class="container-fluid">
-	        <div class="row"><!-- /.row1 -->
-	        	<br>
-	        	<div class="col-md-1 col-sm-1"></div>
-					<div class="col-xs-12 col-sm-8 col-md-8">
-						<div class="jumbotron">
-						<h1>Welcome to ServeFor</h1>
-						<p>本站为轻量级的私人网站建设，旨在利兹学院（不限）资料与信息分享。</p>
-						<p>保证开源与免费，商业合作勿扰，谢谢！</p>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-2 col-md-2"><!-- /.qr code --><!-- col 6-7 -->
-					<a href="#" class="thumbnail">
-				      <img src="images/qrcode.png" alt="qr code">
-				    </a>
-				</div><!-- /.qr code -->
-				<div class="col-md-1 col-sm-1"></div>
-			</div><!-- /.row1 -->
+		
 
 			<div class="row"><!-- /.row2 -->
 				<div class="col-md-1 col-sm-1"></div><!-- col 1 -->
-				<div class="col-md-4 col-sm-4 col-xs-12"><!-- col 2-5 -->
-					<h4>介绍</h4>
-					<p>竞赛讯息：面向大学生科创竞赛活动，每日收集与更新</p>
-					<p>保研信息：暂未开通，敬请等待2020学年下学期</p>
-					<p>竞赛资料：定期更新竞赛资料与历年赛题，如数学建模</p>
-					<p>专业学习：由于版权原因，某些资料无法上传，只提供链接服务</p>
-					<p>今日推荐：定期更新热点问题</p>
+				<div class="col-md-6 col-sm-6 col-xs-12"><!-- col 2-7 -->
+					<p style="text-align:justify">
+						In recent years, there has been a rise in online crowdsourcing platforms that facilitate volunteering efforts, enabling individuals to collaborate on collective goals. Such efforts can play an instrumental role in responding to community needs, especially during times of crisis, such as earthquakes and pandemics. To optimize these efforts, it is crucial to model volunteers’ task participation and collaboration behavior. In this challenge, we aim to learn such a model from data using machine learning and signal processing techniques. We present a volunteer participation dataset with two tasks.
+					</p>
+					<h4>Volunteer Dataset</h4>
+					<p style="text-align:justify">
+						The dataset is collected from a mobile crowdsourcing app called “Anti-Pandemic Pioneers” (later renamed to “Shenzhen Pioneers”) used for organizing volunteers during the COVID-19 pandemics in Shenzhen, China. It contains records of each volunteer participating in a group activity (task). Each record includes features such as volunteer ID, task ID, timestamp, task location, and etc. Task names and descriptions will also be provided.
+					</p>
+					<a href="#" class="thumbnail">
+						<img src="images/volunteer_challenge_map.gif" alt="volunteer_challenge_map">
+					  </a>
+					  <h4>Task 1: Retention Prediction</h4>
+					  <p style="text-align:justify">
+						Predict the number of future participations of volunteers based on their participation history. Groundtruth labels will be provided as a list of “Volunteer ID - # of future participation” pairs. This task focuses on modeling volunteer retention, an important research area in social and management science. Improving volunteer retention enhances the overall volunteering experience and encourages sustained engagement.
+					  </p>
+					  <h4>Task 2: Future Collaboration Prediction</h4>
+					  <p style="text-align:justify">
+						Predict whether two volunteers will collaborate in future tasks. The particiaption records of volunteers as well as the ground truth edge list of their participation graph will be provided. Future collaboration prediction has diverse applications, such as understanding volunteer group behaviors and developing social recommendation tools for volunteers.
+					  </p>
+					  <h4>Competition Details</h4>
+					  <p>See <a href="callforparticipation.pdf">Task Description</a> for detailed information about the dataset and evaluation criteria.</p>
+					  <ul>
+						<li><p>Participants can choose to participate in either one or both tasks. </p>
+						</li>
+						</ul>
+						<ul>
+						<li><p>The datasets for both tasks have identical structure but sampled from distinct districts, ensuring no overlap. </p>
+						</li>
+						</ul>
+						<ul>
+						<li><p>The evaluation metrics are Mean Squared Error for Task 1 and Area Under Precision-Recall Curves (AUPR) for Task 2.</p>
+						</li>
+						</ul>
+						<ul>
+						<li><p>Both datasets are split into a train set (5,000 volunteers) and a test set (5,000 volunteers). The test sets are further split into private test set (2<i>3 for final evaluation) and public test set (1</i>3 for getting feedbacks during the competition).</p>
+						</li>
+						</ul>
+						<ul>
+						<li><p>Participants can access all datasets but only labels for the train sets.</p>
+						</li>
+						</ul>
+						<ul>
+						<li><p>Submissions can be made for the public test set twice a day on Kaggle (add a link), and immediate scores (MSE and AUPR) will be provided.</p>
+						</li>
+						</ul>
+						<ul>
+							<li><p>Submissions of papers will be via the official website of IEEE MSLP. Please wait for latest notification.</p>
+							</li>
+							</ul>
+						<h4>
+							Reference
+						</h4>
+						<p>Zhang, A., Zhang, K., Li, W., Wang, Y., Li, Y. and Zhang, L., 2022. Optimising self-organised volunteer efforts in response to the COVID-19 pandemic. Humanities and Social Sciences Communications, 9(1).</p>
+						<br>
+						<div class="alert alert-warning" role="alert">
+							<p style="text-align:justify"><b>Please NOTE.</b> that the intellectual property (IP) is not transferred to the challenge organizers, i.e., if code is shared/submitted, the participants remain the owners of their code (when the code is made publicly available, an appropriate license should be added).</p>
+							<p style="text-align:justify"><b>Privacy Notice.</b> The volunteer activity data used in this challenge were passively collected from the mobile platform with personal identification information removed. No investigations on humans were involved. During the preparation of this challenge, the organizers did not have access to any identification information associated with the collected data. We are committed to adhering to strict privacy and ethical guidelines during the entire competition process.</p>
+							<p style="text-align:justify"><b>Acknowledgement.</b> We thank the Shenzhen Pioneers APP operation team for providing the volunteer data.</p>
+						</div>
+						<br>
+						
 				</div>
-				<div class="col-xs-12 col-sm-3 col-md-3"><!-- /.qr code --><!-- col 6-7 -->
-					<h4>今日推荐</h4>
-					<p>1. <a href="https://www.wjx.top/m/47711684.aspx">KIKI的一对一面对面时间预约通道</a></p>
-					<p>2. <a href="recommendation/20191013PT.pdf">Peer tutorial：推免知一二PPT查看</a></p>
-					<p>3. <a href="recommendation/FirstPDFFormodeling.pdf">我开始建模时的第一个PDF</a></p>
-				</div><!-- /.qr code -->
 				
-			    <div class="col-md-1 col-sm-1"></div><!-- col 8 -->
-				<div class="col-md-2 col-sm-2 col-xs-12"><!-- /.search more --><!-- col 9-11 -->
+			    
+				<div class="col-md-3 col-sm-3 col-xs-12"><!-- /.search more --><!-- col 9-11 -->
 					<div>
-		            	<p><h4>搜索更多</h4></p>
-		            	<table style="border-collapse:separate; border-spacing:10px 10px;">
-		                <form action="https://www.baidu.com/s">
-		                	<tr>
-			                  	<td><input type="text" class="form-control" placeholder="输入关键字..." name="wd"></td>
-			                  	<td><button class="btn btn-default" type="submit">Baidu</button></td>
-			                </tr>
-				        </form>
-		                <form action="https://www.google.com/s">
-		                	<tr>
-			                  	<td><input type="text" class="form-control" placeholder="输入关键字..." name="wd"></td>
-			                  	<td><button class="btn btn-default" type="submit">Google</button></td>
-			                </tr>
-				        </form>
-				        <table>
+		            	<p><h4>Important Date:</h4></p>
+		            	<ul>
+							<li><p><b>July 19, 2023:</b> Deadline for Submitting Results</p></li>
+							<li><p><b>July 20, 2023:</b> Paper Submission</p></li>
+							<li><p><b>July 25, 2023:</b> Challenge Paper Acceptance Notification</p></li>
+							<li><p><b>July 29, 2023:</b> Camera-Ready Challenge Papers Deadline</p></li>
+						</ul>
 				    </div>
+					<br>
 		          	<div>
-		            	<p><h4>与我联系</h4></p>
+		            	<p><h4>Contact Us:</h4></p>
 		                <p><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;
-		                <a href="mailto:sc16qc@leeds.ac.uk">点击向我发送邮件</a></p>
-		                <p><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=243685914&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:243685914:41" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></p>
+		                <a href="mailto:cst21@mails.tsinghua.edu.cn">cst21@mails.tsinghua.edu.cn</a></p>
+						<br>
+						<p><h4>Challenge Organizer：</h4></p>
+						<a href="#">
+							<img src="images/TBSI_logo.png" width="300px" alt="TBSI_logo">
+						</a>
+		                
 
 		            </div>
             	<div class="col-md-1 col-sm-1"></div><!-- col 12 -->
