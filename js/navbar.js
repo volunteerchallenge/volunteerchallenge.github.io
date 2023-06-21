@@ -19,6 +19,7 @@ document.writeln("		        <li><a href=\'https://www.kaggle.com/competitions/ML
 document.writeln("		        <li><a href=\'https://www.kaggle.com/competitions/MLSP2023-volunteers-02\'>Task 2 on Kaggle</a></li>");
 document.writeln("		        <li><a href=\'https://2023.ieeemlsp.org/paper-submission-guidelines\'>Paper Submission</a></li>");
 document.writeln("		        <li><a href=\'https://2023.ieeemlsp.org/\'>IEEE MLSP 2023 <span class=\'sr-only\'>(current)</span></a></li>");
+document.writeln("		        <li><a href=\'question.html\'>Announcement</a></li>");
 
 // document.writeln("		        <li class=\'dropdown\'>");
 // document.writeln("		          <a href=\'#\' class=\'dropdown-toggle\' data-toggle=\'dropdown\' role=\'button\' aria-haspopup=\'true\' aria-expanded=\'false\'>学习资料<span class=\'caret\'></span></a>");
