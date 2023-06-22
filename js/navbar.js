@@ -16,7 +16,7 @@ document.writeln("		    <!-- Collect the nav links, forms, and other content for
 document.writeln("		    <div class=\'collapse navbar-collapse\' id=\'bs-example-navbar-collapse-1\'>");
 document.writeln("		      <ul class=\'nav navbar-nav\'>");
 document.writeln("		        <li><a href=\'https://www.kaggle.com/competitions/MLSP2023-volunteers-01\'>Task 1 on Kaggle</a></li>");
-document.writeln("		        <li><a href=\'https://www.kaggle.com/competitions/MLSP2023-volunteers-02\'>Task 2 on Kaggle</a></li>");
+document.writeln("		        <li><a href=\'https://www.kaggle.com/competitions/MLSP2023-volunteers-part2\'>Task 2 on Kaggle</a></li>");
 document.writeln("		        <li><a href=\'https://2023.ieeemlsp.org/paper-submission-guidelines\'>Paper Submission</a></li>");
 document.writeln("		        <li><a href=\'https://2023.ieeemlsp.org/\'>IEEE MLSP 2023 <span class=\'sr-only\'>(current)</span></a></li>");
 document.writeln("		        <li><a href=\'question.html\'>Announcement</a></li>");
